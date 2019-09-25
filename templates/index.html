@@ -16,7 +16,7 @@
                 <tr>
                     <td><label for="username">Username</label></td>
                     <td>
-                        <input id="username" name="username" type="text" value="{{username}}">
+                        <input name="username" type="text" value="{{username}}">
                         <span class="error">{{usernameError}}</span>
                     </td>
                 </tr>
@@ -24,8 +24,7 @@
                     <td><label for="password">Password</label></td>
                     <td>
                         <input name="password" type="password">
-
-                        <span class="error">{{ error }}</span>
+                        <span class="error">{{ passwordError }}</span>
                         
                     </td>
                 </tr>
@@ -33,14 +32,14 @@
                     <td><label for="verify">Verify Password</label></td>
                     <td>
                         <input name="verify" type="password">
-                        <span class="error"></span>
+                        <span class="error">{{ verifyError }}</span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email (optional)</label></td>
                     <td>
-                        <input name="email" value="">
-                        <span class="error"></span>
+                        <input name="email" value="{{email}}">
+                        <span class="error">{{ emailError }}</span>
                     </td>
                 </tr>
             </table>
